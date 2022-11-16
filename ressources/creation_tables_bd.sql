@@ -1,5 +1,5 @@
-CREATE DATABASE if not exists livre_heros_test3;
-use livre_heros_test3;
+CREATE DATABASE if not exists Exercice11_LDVELH;
+use Exercice11_LDVELH;
 CREATE TABLE objet
 (
     id INT auto_increment,
