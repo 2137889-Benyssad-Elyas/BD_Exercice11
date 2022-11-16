@@ -29,12 +29,12 @@
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QLabel" name="textChapitre">
-            <property name="text">
-             <string>texte chapitre</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
+           <widget class="QTextBrowser" name="textChapitre">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
            </widget>
           </item>
