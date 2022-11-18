@@ -22,6 +22,20 @@
         <property name="leftMargin">
          <number>0</number>
         </property>
+        <item>
+         <widget class="QPushButton" name="bouttonCommencer">
+          <property name="text">
+           <string>Commencer</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bouttonSauver">
+          <property name="text">
+           <string>Sauvegarder</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </item>
       <item>
@@ -91,8 +105,8 @@
    <slot>continuer()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>412</x>
-     <y>535</y>
+     <x>527</x>
+     <y>587</y>
     </hint>
     <hint type="destinationlabel">
      <x>700</x>
@@ -100,8 +114,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>bouttonCommencer</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>commencer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>continuer()</slot>
+  <slot>commencer()</slot>
  </slots>
 </ui>
