@@ -23,17 +23,363 @@
          <number>0</number>
         </property>
         <item>
-         <widget class="QPushButton" name="bouttonCommencer">
-          <property name="text">
-           <string>Commencer</string>
+         <widget class="QGroupBox" name="groupBox_Menu">
+          <property name="title">
+           <string>Menu</string>
           </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="bouttonSauver">
-          <property name="text">
-           <string>Sauvegarder</string>
-          </property>
+          <widget class="QGroupBox" name="groupBox_CommencerPartie">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>221</width>
+             <height>181</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Commencer une nouvelle partie</string>
+           </property>
+           <widget class="QPushButton" name="bouttonCommencer">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>171</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Commencer</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_NomPerso">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>40</y>
+              <width>113</width>
+              <height>20</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>181</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ENTRER LE NOM DU PERSONNAGE :</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spinBox_Habilite">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>70</y>
+              <width>42</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spinBox_Endurance">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>100</y>
+              <width>42</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>61</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Habilite      :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>100</y>
+              <width>61</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Endurance :</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_ChargerPartie">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>240</y>
+             <width>221</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Charger une partie</string>
+           </property>
+           <widget class="QComboBox" name="comboBox_ChargerPartie">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>201</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>-</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="bouttonCharger">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>60</y>
+              <width>181</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Charger une partie</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="boutton_supprimer">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>181</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Supprimer la partie</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_PartieActuelle">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>390</y>
+             <width>221</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Partie actuelle</string>
+           </property>
+           <widget class="QPushButton" name="bouttonSauver">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>90</y>
+              <width>191</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Sauvegarder</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_NomPerso">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>20</y>
+              <width>41</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Joueur :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>40</y>
+              <width>41</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Habilite :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>60</y>
+              <width>61</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Endurance :</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_joueurActuel">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>20</y>
+              <width>41</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_habiliteActuel">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>40</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_enduranceActuel">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>60</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="Line" name="line">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>380</y>
+             <width>118</width>
+             <height>3</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="Line" name="line_2">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>230</y>
+             <width>118</width>
+             <height>3</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_info">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>540</y>
+             <width>231</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Microsoft PhagsPa</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
          </widget>
         </item>
        </layout>
@@ -78,6 +424,13 @@
            </widget>
           </item>
           <item>
+           <widget class="QRadioButton" name="choix4">
+            <property name="text">
+             <string>choix4</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QPushButton" name="boutonContinuer">
             <property name="text">
              <string>Continuer</string>
@@ -89,7 +442,280 @@
        </layout>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_3"/>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QGroupBox" name="inventaire">
+          <property name="title">
+           <string>Inventaire</string>
+          </property>
+          <widget class="QGroupBox" name="armes">
+           <property name="geometry">
+            <rect>
+             <x>19</x>
+             <y>29</y>
+             <width>211</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Armes</string>
+           </property>
+           <widget class="QComboBox" name="comboBox">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>171</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>test</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>testy</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>171</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>f</string>
+             </property>
+            </item>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="discipline_Kai">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>160</y>
+             <width>211</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Discipline Kai</string>
+           </property>
+           <widget class="QComboBox" name="comboBox_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>171</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QComboBox" name="comboBox_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>60</y>
+              <width>171</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nouvel élément</string>
+             </property>
+            </item>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="sac_a_dos">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>270</y>
+             <width>211</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Sac à dos</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="objetsSpe">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>410</y>
+             <width>141</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Objets spéciaux</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="bourses">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>430</y>
+             <width>61</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Bourse</string>
+           </property>
+           <widget class="QSpinBox" name="spinBox_bourse">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>41</width>
+              <height>20</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </item>
@@ -121,8 +747,8 @@
    <slot>commencer()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>123</x>
-     <y>204</y>
+     <x>185</x>
+     <y>213</y>
     </hint>
     <hint type="destinationlabel">
      <x>41</x>
@@ -130,9 +756,126 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>bouttonCharger</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>chargerPartie()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>27</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bouttonSauver</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sauvegarder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>100</x>
+     <y>530</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox</sender>
+   <signal>activated(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>recupererDonneKai()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>678</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>791</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_2</sender>
+   <signal>activated(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>recupererDonneKai()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>618</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>533</x>
+     <y>177</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_3</sender>
+   <signal>activated(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>recupererDonneArmes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>650</x>
+     <y>206</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_4</sender>
+   <signal>activated(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>recupererDonneArmes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>659</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>boutton_supprimer</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>supprimer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>350</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>continuer()</slot>
   <slot>commencer()</slot>
+  <slot>chargerPartie()</slot>
+  <slot>sauvegarder()</slot>
+  <slot>recupererDonneKai()</slot>
+  <slot>recupererDonneArmes()</slot>
+  <slot>supprimer()</slot>
  </slots>
 </ui>
